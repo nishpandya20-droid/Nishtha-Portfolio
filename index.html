@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nishtha Pandya — Brand & Visual Communication Designer</title>
+  
+  <!-- Meta SEO -->
+  <meta name="description" content="Portfolio of Nishtha Pandya — Creative Graphic Designer & Visual Communication Designer. Specializing in Branding, Logos, Social Media, and UI/UX.">
+  <meta name="keywords" content="Nishtha Pandya, Graphic Design, Brand Identity, UI/UX, Portfolio, Canva, Figma, Adobe Express, Udaipur, Rajasthan">
+  <meta name="author" content="Nishtha Pandya">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Animated Background Lights -->
+  <div class="ambient-bg">
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+    <div class="ambient-orb orb-3"></div>
+  </div>
+
+  <!-- =================================================================
+       NAVIGATION HEADER
+  ================================================================== -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Nishtha Pandya Homepage">
+        <div class="brand-monogram">NP</div>
+        <div class="brand-text-wrap">
+          <span class="brand-name">Nishtha Pandya</span>
+          <span class="brand-sub">Graphic Designer | Brand & Visual Communication Designer</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">What I Do</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#casestudy" class="nav-link">ASTER Case Study</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="#contact" class="nav-link">Contact & Resume</a></li>
+      </ul>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
+          <i data-lucide="sun"></i>
+        </button>
+        <a href="#contact" class="btn-primary-sm">
+          <span>Let's Talk</span>
+          <i data-lucide="arrow-right"></i>
+        </a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open Navigation Menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Top Scroll Progress Bar -->
+    <div class="scroll-progress-bar"></div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div id="mobileNavDrawer" style="display:none; position:fixed; top:80px; left:0; width:100%; background:var(--bg-glass-strong); backdrop-filter:blur(18px); padding:24px; border-bottom:1px solid var(--border-medium); z-index:999; flex-direction:column; gap:16px;">
+    <a href="#about" class="nav-link" style="font-size:1.1rem; padding:8px 0;">About</a>
+    <a href="#services" class="nav-link" style="font-size:1.1rem; padding:8px 0;">What I Do</a>
+    <a href="#portfolio" class="nav-link" style="font-size:1.1rem; padding:8px 0;">Portfolio Works</a>
+    <a href="#casestudy" class="nav-link" style="font-size:1.1rem; padding:8px 0;">ASTER Case Study</a>
+    <a href="#experience" class="nav-link" style="font-size:1.1rem; padding:8px 0;">Experience</a>
+    <a href="#testimonials" class="nav-link" style="font-size:1.1rem; padding:8px 0;">Testimonials</a>
+    <a href="#contact" class="nav-link" style="font-size:1.1rem; padding:8px 0;">Contact & Resume</a>
+  </div>
+
+  <main>
+    <!-- ===============================================================
+         HERO / FIRST PAGE: GRAND EDITORIAL "PORTFOLIO" COVER
+         (Inspired by Canva Slide 1 with massive fancy typography)
+    ================================================================ -->
+    <section id="hero" class="hero-cover-page">
+      <div class="hero-center-box">
+        <span class="hero-eyebrow">
+          ✦ Graphic designer ✦
+        </span>
+
+        <!-- Grand Fancy "PORTFOLIO" in Huge Display Letters -->
+        <h1 class="hero-giant-portfolio-title">PORTFOLIO</h1>
+
+        <span class="hero-presented-by">Presented by</span>
+        <h2 class="hero-designer-name">Nishtha Pandya</h2>
+        
+        <div>
+          <span class="hero-role-pill">Brand & Visual Communication Designer</span>
+        </div>
+
+        <div class="hero-cta-row">
+          <a href="#portfolio" class="btn-primary">
+            <span>Explore Selected Works</span>
+            <i data-lucide="sparkles"></i>
+          </a>
+          <a href="#about" class="btn-secondary">
+            <span>Meet the Designer</span>
+            <i data-lucide="user"></i>
+          </a>
+          <a href="#contact" class="btn-secondary">
+            <span>Get In Touch & Resume</span>
+            <i data-lucide="arrow-down"></i>
+          </a>
+        </div>
+
+        <!-- Metadata Bar Reference from Canva Cover -->
+        <div class="hero-bottom-meta-bar">
+          <span class="hero-meta-item">
+            <i data-lucide="map-pin"></i>
+            <strong>Udaipur, Rajasthan</strong>
+          </span>
+          <span class="hero-meta-item">
+            <i data-lucide="mail"></i>
+            <strong>pnishtha29@gmail.com</strong>
+          </span>
+          <span class="hero-meta-item">
+            <i data-lucide="phone"></i>
+            <strong>+91-8290448447</strong>
+          </span>
+          <span class="hero-meta-item">
+            <i data-lucide="calendar"></i>
+            <strong>October 2026</strong>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===============================================================
+         ABOUT ME SECTION: WITH NISHTHA'S REAL PORTRAIT PHOTO
+    ================================================================ -->
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <div class="about-card-visual reveal-fade">
+          <div class="about-portrait-frame" onclick="openLightboxSingle('assets/profile/nishtha.jpg', 'Nishtha Pandya — Creative Graphic Designer')">
+            <img 
+              id="aboutPhotoImg" 
+              src="assets/profile/nishtha.jpg" 
+              alt="Nishtha Pandya"
+            >
+            <div class="about-location-pill">
+              <i data-lucide="palette"></i> Creative Thinker & Engineer
+            </div>
+          </div>
+          <div class="about-experience-card">
+            <div class="brand-monogram" style="width:40px; height:40px; font-size:1.1rem;">CS</div>
+            <div>
+              <h5 style="font-size:0.95rem; font-weight:700;">Computer Science Roots</h5>
+              <p style="font-size:0.78rem; color:var(--text-muted);">Engineering rigor meets aesthetic flair</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-story reveal-fade">
+          <span class="section-tag">About The Designer</span>
+          <h2 class="section-title">Hello! I'm <span class="designer-name">Nishtha Pandya</span></h2>
+          
+          <p>
+            I'm a creative and detail-oriented Graphic Designer with a background in Computer Science & Engineering. I create posters, social media creatives, and promotional designs that communicate ideas clearly and engage their intended audience.
+          </p>
+          <p>
+            I work with Canva, Figma, and Adobe Express, with a strong understanding of UI/UX principles and visual communication. I also have experience with video editing and creating digital content for events, campaigns, and community initiatives.
+          </p>
+          <p>
+            I enjoy exploring typography, layouts, and visual styles to create purposeful designs. I'm continuously learning and refining my skills to turn ideas into clear, engaging visual experiences.
+          </p>
+
+          <!-- Core Skills Tags -->
+          <div class="about-skills-list">
+            <span class="skill-tag">Brand Identity</span>
+            <span class="skill-tag">LogoFolio</span>
+            <span class="skill-tag">Social Media Campaigns</span>
+            <span class="skill-tag">Editorial & Magazines</span>
+            <span class="skill-tag">Typography Systems</span>
+            <span class="skill-tag">UI / UX Wireframing</span>
+            <span class="skill-tag">Packaging Mockups</span>
+            <span class="skill-tag">Video Editing & Reels</span>
+          </div>
+
+          <div style="display:flex; gap:16px; align-items:center; flex-wrap:wrap;">
+            <a href="#contact" class="btn-primary">
+              <span>Let's Collaborate</span>
+              <i data-lucide="arrow-right"></i>
+            </a>
+            <button class="btn-secondary" onclick="copyToClipboard('pnishtha29@gmail.com', 'Email')">
+              <i data-lucide="copy"></i>
+              <span>Copy Email</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===============================================================
+         WHAT I DO / SERVICES
+    ================================================================ -->
+    <section id="services" class="section" style="background: var(--bg-surface);">
+      <div class="container">
+        <div class="section-header reveal-fade">
+          <span class="section-tag">Services & Expertise</span>
+          <h2 class="section-title">What I do (and love doing)</h2>
+          <p class="section-desc">
+            Turning concepts into cohesive, meaningful visual identities across digital, print, and community platforms.
+          </p>
+        </div>
+
+        <div class="services-grid" id="servicesGrid">
+          <!-- Dynamically populated from PORTFOLIO_DATA -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===============================================================
+         TOOLS I'M FLUENT IN (DESIGN TOOLS ONLY - WEB & TECH REMOVED)
+    ================================================================ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal-fade">
+          <span class="section-tag">Toolkit & Software</span>
+          <h2 class="section-title">Tools I'm fluent in.</h2>
+          <p class="section-desc">
+            Harnessing dedicated design software to build scalable, beautiful visual collateral for brands, events, and communities.
+          </p>
+        </div>
+
+        <div class="tools-grid" id="toolsGrid">
+          <!-- Dynamically populated from PORTFOLIO_DATA (Canva, Figma, Adobe Express, InShot, PowerPoint) -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===============================================================
+         PORTFOLIO GALLERY (ALL 61+ REAL WORKS & VIDEOS)
+    ================================================================ -->
+    <section id="portfolio" class="section" style="background: var(--bg-main);">
+      <div class="container">
+        <div class="section-header reveal-fade">
+          <span class="section-tag">Featured Portfolio</span>
+          <h2 class="section-title">Design Projects & Creatives</h2>
+          <p class="section-desc">
+            Explore all 61+ original posters, logo collections, event branding assets, and motion video reels.
+          </p>
+        </div>
+
+        <!-- Filter Pill Tabs -->
+        <div class="gallery-filter-wrap" id="galleryFilterContainer">
+          <!-- Dynamically generated categories -->
+        </div>
+
+        <!-- Live result count for the active filter -->
+        <p class="gallery-result-count" id="galleryResultCount"></p>
+
+        <!-- Project Cards Grid -->
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Dynamically populated with all user images and videos -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===============================================================
+         FEATURED CASE STUDY: ASTER CAFÉ & COFFEE
+    ================================================================ -->
+    <section id="casestudy" class="section case-study-section">
+      <div class="container">
+        <div class="section-header reveal-fade">
+          <span class="section-tag">Deep-Dive Case Study</span>
+          <h2 class="section-title">ASTER Café & Coffee</h2>
+          <p class="section-desc">
+            A complete visual identity system designed around botanical beauty, calm mornings, and slow coffee moments.
+          </p>
+        </div>
+
+        <div class="case-study-hero-card reveal-fade">
+          <div class="case-study-grid">
+            <div class="case-study-details">
+              <h3>ASTER Café & Coffee</h3>
+              <p class="case-study-tagline">"Bloom with every sip — A little moment of calm"</p>
+              
+              <p class="case-study-desc">
+                ASTER is a warm, botanical café inspired by the beauty of flowers and the comfort of slow coffee moments. The brand combines natural elements, elegant typography, and a cozy atmosphere to create a place where every sip feels like a little moment of calm.
+              </p>
+
+              <ul class="case-study-highlights">
+                <li>
+                  <span class="check-dot">✓</span>
+                  <span><strong>Target Audience:</strong> Coffee lovers, students, remote creatives & young professionals.</span>
+                </li>
+                <li>
+                  <span class="check-dot">✓</span>
+                  <span><strong>Brand Vibe:</strong> Botanical, nature-inspired, elegant, warm & cozy.</span>
+                </li>
+                <li>
+                  <span class="check-dot">✓</span>
+                  <span><strong>Symbolism:</strong> Inspired by the Aster flower & morning star — growth, beauty, and renewal.</span>
+                </li>
+              </ul>
+
+              <!-- Interactive Color Palette Swatches -->
+              <h4 class="color-swatches-title">Brand Color Palette (Click to Copy Hex)</h4>
+              <div class="color-swatches-grid" id="asterSwatchesContainer">
+                <!-- Dynamically populated from PORTFOLIO_DATA -->
+              </div>
+
+              <!-- Typography System -->
+              <div style="background:var(--bg-surface); padding:20px; border-radius:var(--radius-sm); border:1px solid var(--border-subtle); margin-top:20px;">
+                <h5 style="font-size:0.9rem; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; margin-bottom:8px; color:var(--primary);">
+                  Typography System
+                </h5>
+                <p style="font-family:'Cormorant Garamond', serif; font-size:1.4rem; font-weight:600; color:var(--text-primary); margin-bottom:4px;">
+                  Cormorant Garamond — Elegant Editorial Serif
+                </p>
+                <p style="font-family:'Poppins', sans-serif; font-size:0.9rem; color:var(--text-secondary); margin-bottom:6px;">
+                  Poppins — Clean, approachable sans-serif for menus and information.
+                </p>
+                <p style="font-family:'Caveat', cursive; font-size:1.3rem; color:var(--primary);">
+                  Brittany Script — Handwritten accent for taglines and personal touches.
+                </p>
+              </div>
+            </div>
+
+            <!-- Case Study Visual Mockups -->
+            <div class="case-study-gallery">
+              <img 
+                src="assets/slides/thumbs/11.webp" 
+                onerror="this.onerror=null; this.src='assets/slides/11.png';" 
+                alt="ASTER Cafe Guidelines" 
+                onclick="openLightboxSingle('assets/slides/11.png', 'ASTER Brand Guidelines & Identity')"
+                title="Click to view full size"
+              >
+              <img 
+                src="assets/slides/thumbs/12.webp" 
+                onerror="this.onerror=null; this.src='assets/slides/12.png';" 
+                alt="ASTER Cafe Collateral & Stationery" 
+                onclick="openLightboxSingle('assets/slides/12.png', 'ASTER Packaging, Mockups & Signage')"
+                title="Click to view full size"
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===============================================================
+         EXPERIENCE TIMELINE (EXACT DATES & INDIVIDUAL ROLES FROM RESUME)
+    ================================================================ -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header reveal-fade">
+          <span class="section-tag">Career & Leadership</span>
+          <h2 class="section-title">Design Experience</h2>
+          <p class="section-desc">
+            Verified roles, creative contributions, and leadership across publishing committees and developer communities.
+          </p>
+        </div>
+
+        <div class="timeline" id="experienceTimeline">
+          <!-- Dynamically populated from PORTFOLIO_DATA with exact resume dates -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===============================================================
+         TESTIMONIALS SECTION
+    ================================================================ -->
+    <section id="testimonials" class="section" style="background: var(--bg-surface);">
+      <div class="container">
+        <div class="section-header reveal-fade">
+          <span class="section-tag">Endorsements</span>
+          <h2 class="section-title">What Collaborators Say</h2>
+          <p class="section-desc">
+            Feedback and testimonials from founders, engineering leads, project managers, and creative coordinators.
+          </p>
+        </div>
+
+        <div class="testimonials-grid" id="testimonialsGrid">
+          <!-- Dynamically populated from PORTFOLIO_DATA -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===============================================================
+         CONTACT & RESUME SECTION
+         (PREVIOUS 2-COLUMN FORMAT: CONTACT INFO ON LEFT, RESUME ON RIGHT)
+    ================================================================ -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header reveal-fade">
+          <span class="section-tag">Let's Connect & Background</span>
+          <h2 class="section-title">Let's Work Together!</h2>
+          <p class="section-desc">
+            Open for creative collaborations, branding projects, and design roles.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Column: Contact Cards Stack -->
+          <div class="contact-info-col reveal-fade">
+            <h3>Get in Touch</h3>
+            <p class="contact-tagline">
+              Have a project in mind, an opportunity, or looking for a passionate brand & visual designer? Let's create something extraordinary.
+            </p>
+
+            <div class="contact-cards-stack">
+              <!-- Email -->
+              <div class="contact-card-item">
+                <div class="contact-card-left">
+                  <div class="contact-icon-box">
+                    <i data-lucide="mail"></i>
+                  </div>
+                  <div>
+                    <span class="contact-label">Email Address</span>
+                    <p class="contact-val">pnishtha29@gmail.com</p>
+                  </div>
+                </div>
+                <button class="copy-btn" onclick="copyToClipboard('pnishtha29@gmail.com', 'Email')">
+                  <i data-lucide="copy"></i> Copy
+                </button>
+              </div>
+
+              <!-- Phone -->
+              <div class="contact-card-item">
+                <div class="contact-card-left">
+                  <div class="contact-icon-box">
+                    <i data-lucide="phone"></i>
+                  </div>
+                  <div>
+                    <span class="contact-label">Phone / WhatsApp</span>
+                    <p class="contact-val">+91-8290448447</p>
+                  </div>
+                </div>
+                <button class="copy-btn" onclick="copyToClipboard('+918290448447', 'Phone')">
+                  <i data-lucide="copy"></i> Copy
+                </button>
+              </div>
+
+              <!-- Location -->
+              <div class="contact-card-item">
+                <div class="contact-card-left">
+                  <div class="contact-icon-box">
+                    <i data-lucide="map-pin"></i>
+                  </div>
+                  <div>
+                    <span class="contact-label">Location</span>
+                    <p class="contact-val">Udaipur, Rajasthan, India</p>
+                  </div>
+                </div>
+                <span style="font-size:0.8rem; color:var(--text-muted); font-weight:500;">IST (UTC+5:30)</span>
+              </div>
+
+              <!-- GitHub -->
+              <div class="contact-card-item">
+                <div class="contact-card-left">
+                  <div class="contact-icon-box">
+                    <i data-lucide="github"></i>
+                  </div>
+                  <div>
+                    <span class="contact-label">GitHub Repository</span>
+                    <p class="contact-val">github.com/nishpandya20-droid</p>
+                  </div>
+                </div>
+                <a href="https://github.com/nishpandya20-droid" target="_blank" rel="noopener" class="copy-btn">
+                  <i data-lucide="external-link"></i> Visit
+                </a>
+              </div>
+
+              <!-- Resume PDF -->
+              <div class="contact-card-item">
+                <div class="contact-card-left">
+                  <div class="contact-icon-box">
+                    <i data-lucide="file-text"></i>
+                  </div>
+                  <div>
+                    <span class="contact-label">Resume</span>
+                    <p class="contact-val">Nishtha_Pandya_Resume.pdf</p>
+                  </div>
+                </div>
+                <a href="assets/resume/Nishtha_Pandya_Resume.pdf" target="_blank" rel="noopener" class="copy-btn" download>
+                  <i data-lucide="download"></i> Download
+                </a>
+              </div>
+            </div>
+
+            <div style="margin-top:20px;">
+              <a href="mailto:pnishtha29@gmail.com?subject=Design%20Inquiry%20/%20Opportunity" class="btn-primary" style="width:100%; justify-content:center;">
+                <i data-lucide="send"></i>
+                <span>Send Direct Email</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =================================================================
+       FOOTER
+  ================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="brand-logo">
+          <div class="brand-monogram">NP</div>
+          <div>
+            <h4 style="font-family:var(--font-serif); font-size:1.25rem;">Nishtha Pandya</h4>
+            <p style="font-size:0.8rem; color:var(--text-muted);">Brand & Visual Communication Designer</p>
+          </div>
+        </div>
+
+        <ul class="footer-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Works</a></li>
+          <li><a href="#casestudy">ASTER</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact & Resume</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Nishtha Pandya. All rights reserved. Designed with purpose & creativity.</p>
+        <p>Built with modern web standards • Smooth 60fps animations • Fully responsive</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =================================================================
+       LIGHTBOX MODAL (SUPPORTS BOTH IMAGES & VIDEOS)
+  ================================================================== -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <button class="lightbox-close-btn" onclick="closeLightbox()" aria-label="Close Lightbox">
+      <i data-lucide="x"></i>
+    </button>
+    <button class="lightbox-arrow lightbox-prev" onclick="prevLightboxSlide()" aria-label="Previous Slide">
+      <i data-lucide="chevron-left"></i>
+    </button>
+    
+    <div class="lightbox-content">
+      <div class="lightbox-img-wrap">
+        <img src="" alt="Enlarged Design Asset" id="lightboxImg" class="lightbox-img">
+        <video id="lightboxVideo" class="lightbox-video" controls playsinline style="display:none;"></video>
+      </div>
+      <div class="lightbox-meta">
+        <h4 id="lightboxTitle">Design Showcase</h4>
+        <span class="lightbox-counter" id="lightboxCounter">1 of 1</span>
+      </div>
+    </div>
+
+    <button class="lightbox-arrow lightbox-next" onclick="nextLightboxSlide()" aria-label="Next Slide">
+      <i data-lucide="chevron-right"></i>
+    </button>
+  </div>
+
+  <!-- Floating Action Buttons -->
+  <div class="floating-actions">
+    <button class="fab-btn" id="backToTopBtn" style="display:none;" title="Back to top" aria-label="Scroll to top">
+      <i data-lucide="chevron-up"></i>
+    </button>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-notice" id="toastNotice"></div>
+
+  <!-- Application Logic Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
