@@ -211,8 +211,8 @@ button {
   width: 100%;
   z-index: 1000;
   background: var(--bg-glass);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border-subtle);
   transition: all var(--transition-normal);
 }
@@ -220,164 +220,208 @@ button {
 .header.scrolled {
   box-shadow: var(--shadow-sm);
   background: var(--bg-glass-strong);
+  border-bottom-color: var(--border-medium);
 }
 
 .nav-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 80px;
+  height: 72px;
+  gap: 16px;
 }
 
+/* --- Brand / Logo --- */
 .brand-logo {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 11px;
+  flex-shrink: 0;
 }
 
 .brand-monogram {
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
   background: linear-gradient(135deg, var(--primary), #8f5a57);
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: var(--font-serif);
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 700;
   box-shadow: 0 4px 14px var(--primary-glow);
   transition: transform var(--transition-fast);
+  flex-shrink: 0;
 }
 
 .brand-logo:hover .brand-monogram {
-  transform: rotate(-6deg) scale(1.05);
+  transform: rotate(-6deg) scale(1.06);
 }
 
 .brand-text-wrap {
   display: flex;
   flex-direction: column;
+  line-height: 1;
 }
 
 .brand-name {
   font-family: var(--font-serif);
-  font-size: 1.35rem;
+  font-size: 1.2rem;
   font-weight: 700;
-  line-height: 1.1;
+  line-height: 1.15;
   letter-spacing: -0.01em;
+  white-space: nowrap;
 }
 
 .brand-sub {
-  font-size: 0.72rem;
-  letter-spacing: 0.12em;
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--primary);
   font-weight: 600;
+  white-space: nowrap;
+  margin-top: 2px;
 }
 
+/* --- Desktop Nav Links --- */
 .nav-links {
   display: flex;
   align-items: center;
   list-style: none;
-  gap: 40px;
+  gap: 0;
+  flex: 1;
+  justify-content: center;
+}
+
+.nav-links li {
+  display: flex;
 }
 
 .nav-link {
-  font-size: 0.92rem;
+  font-size: 0.85rem;
   font-weight: 500;
   color: var(--text-secondary);
   position: relative;
-  padding: 6px 0;
-  transition: color var(--transition-fast);
+  padding: 6px 14px;
+  border-radius: var(--radius-sm);
+  transition: color var(--transition-fast), background var(--transition-fast);
+  white-space: nowrap;
 }
 
 .nav-link::after {
   content: '';
   position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
+  bottom: 2px;
+  left: 14px;
+  right: 14px;
+  width: auto;
   height: 2px;
   background-color: var(--primary);
   border-radius: 2px;
-  transition: width var(--transition-normal);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform var(--transition-normal);
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover,
+.nav-link.active {
   color: var(--text-primary);
+  background: rgba(191, 147, 144, 0.08);
 }
 
-.nav-link:hover::after, .nav-link.active::after {
-  width: 100%;
+.nav-link:hover::after,
+.nav-link.active::after {
+  transform: scaleX(1);
 }
 
+/* --- Nav Actions --- */
 .nav-actions {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 10px;
+  flex-shrink: 0;
 }
 
 .theme-toggle-btn {
-  width: 42px;
-  height: 42px;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
   border: 1px solid var(--border-medium);
-  background: var(--bg-surface);
-  color: var(--text-primary);
+  background: transparent;
+  color: var(--text-secondary);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.1rem;
   transition: all var(--transition-fast);
+}
+
+.theme-toggle-btn svg {
+  width: 17px;
+  height: 17px;
 }
 
 .theme-toggle-btn:hover {
   border-color: var(--primary);
   color: var(--primary);
-  transform: scale(1.05);
+  background: var(--primary-glow);
+  transform: scale(1.08);
 }
 
 .btn-primary-sm {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 9px 20px;
+  gap: 6px;
+  padding: 8px 18px;
   background: var(--primary);
   color: #fff;
   border-radius: var(--radius-pill);
-  font-size: 0.88rem;
+  font-size: 0.82rem;
   font-weight: 600;
+  white-space: nowrap;
   transition: all var(--transition-fast);
   box-shadow: 0 4px 14px var(--primary-glow);
+}
+
+.btn-primary-sm svg {
+  width: 15px;
+  height: 15px;
 }
 
 .btn-primary-sm:hover {
   background: var(--primary-light);
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px var(--primary-glow);
+  box-shadow: 0 6px 20px var(--primary-glow);
 }
 
 .mobile-menu-btn {
   display: none;
-  width: 42px;
-  height: 42px;
+  width: 38px;
+  height: 38px;
   border-radius: var(--radius-sm);
   border: 1px solid var(--border-medium);
-  background: var(--bg-surface);
-  color: var(--text-primary);
+  background: transparent;
+  color: var(--text-secondary);
   align-items: center;
   justify-content: center;
+  transition: all var(--transition-fast);
+}
+
+.mobile-menu-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
 }
 
 .scroll-progress-bar {
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 2.5px;
+  height: 2px;
   background: linear-gradient(90deg, var(--primary), #dfa8a5, var(--primary));
   width: 0%;
   transition: width 0.1s linear;
+  border-radius: 0 2px 2px 0;
 }
 
 /* ===================================================================
@@ -1913,6 +1957,28 @@ button {
    RESPONSIVE DESIGN BREAKPOINTS
 =================================================================== */
 
+/* Medium screens — collapse nav links before they crowd */
+@media (max-width: 1100px) {
+  .nav-link {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 960px) {
+  .nav-links {
+    display: none;
+  }
+
+  .btn-primary-sm {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: flex;
+  }
+}
+
 @media (max-width: 1024px) {
   .contact-grid {
     grid-template-columns: 1fr;
@@ -1937,15 +2003,19 @@ button {
   .section-title {
     font-size: 2.3rem;
   }
-  
+
   .nav-links {
     display: none;
   }
-  
+
   .mobile-menu-btn {
     display: flex;
   }
-  
+
+  .btn-primary-sm {
+    display: none;
+  }
+
   .projects-grid {
     grid-template-columns: 1fr;
   }
